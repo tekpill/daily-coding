@@ -23,4 +23,14 @@ const printLinkedList = (head) => {
   }
 };
 
+//recursion
+const printLinkedListRecursion = (head) => {
+  if (!head) return;
+  console.log(head.val);
+  printLinkedListRecursion(head.next);
+};
+
+console.log("== Usual ==");
 printLinkedList(a);
+console.log("== Recursion ==");
+printLinkedListRecursion(a);
